@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PizzaOrdering</string>
+    <string name="title_activity_login_and_register">LoginAndRegisterActivity</string>
+    <string name="ten_dang_nhap">Tên Đăng Nhập</string>
+    <string name="mat_khau">Mật Khẩu</string>
+    <string name="email">EMAIL</string>
+    <string name="dien_ten_dang_nhap">Điền Tên Đăng Nhập</string>
+    <string name="dien_mat_khau">Điền Mật Khẩu</string>
+</resources>

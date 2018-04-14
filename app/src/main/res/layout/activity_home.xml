@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.pizzaordering.HomeActivity"
+    android:background="#FAEBD7">
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarHome"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#5b4f4f"
+                app:title="Pizza HTH"
+                app:titleTextColor="#fff"
+                app:titleMarginStart="90dp">
+
+            </android.support.v7.widget.Toolbar>
+            <ViewFlipper
+                android:id="@+id/viewFlipper"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/promotion_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/promotion_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/promotion_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/promotion_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </ViewFlipper>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sản phẩm mới nhất"
+                    android:textSize="24sp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"/>
+
+                <GridView
+                    android:padding="10dp"
+                    android:numColumns="1"
+                    android:id="@+id/gridViewItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </GridView>
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <android.support.design.widget.NavigationView
+            android:background="#FAEBD7"
+            android:id="@+id/navigationView"
+            android:layout_gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:headerLayout="@layout/activity_header"
+            app:menu="@menu/activity_drawer">
+        </android.support.design.widget.NavigationView>
+    </android.support.v4.widget.DrawerLayout>
+
+
+
+</LinearLayout>

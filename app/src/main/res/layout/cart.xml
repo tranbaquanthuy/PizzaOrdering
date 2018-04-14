@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10">
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/imgCart"
+            android:layout_margin="5dp"
+            android:adjustViewBounds="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*Giữ để xóa sản phẩm"
+            android:textSize="10sp"
+            android:textColor="#f00"/>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="7">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:id="@+id/txvCart"
+            android:textColor="#000000"
+            android:text="Tên món hàng"/>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txvCartPrice"
+                android:textColor="#df4646"
+                android:textSize="18sp"
+                android:text="Giá món hàng"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="3dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="đồng"
+                android:textColor="#df4646"
+                android:layout_marginTop="3dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:focusable="false"
+                android:text="-"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/buttonMinute"/>
+            <Button
+                android:focusable="false"
+                android:text="1"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/buttonValue"
+                android:background="@null"/>
+            <Button
+                android:focusable="false"
+                android:text="+"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/buttonPlus"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

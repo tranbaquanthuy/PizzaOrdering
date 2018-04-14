@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/icon_home"
+            android:title="Trang chủ"/>
+        <item
+            android:id="@+id/pizza"
+            android:icon="@drawable/icon_pizza"
+            android:title="Pizza"/>
+        <item
+            android:id="@+id/cart"
+            android:icon="@drawable/icon_cart"
+            android:title="Giỏ hàng"/>
+        <item
+            android:id="@+id/contact"
+            android:icon="@drawable/icon_contact"
+        android:title="Liên hệ"/>
+         <item
+             android:id="@+id/profile"
+             android:icon="@drawable/icon_profile2"
+             android:title="Hồ sơ cá nhân"/>
+    </group>
+</menu>
